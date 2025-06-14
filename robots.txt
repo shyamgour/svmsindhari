@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shyamgour.github.io/svmsindhari/sitemap.xml

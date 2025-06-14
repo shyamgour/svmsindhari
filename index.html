@@ -3,117 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to SVM Sindhari</title>
+    <title>Home | SVM Sindhari</title>
+    <meta name="description" content="Welcome to Shree Vidhya Mandir, Sindhari. Empowering Students for a Brighter Future.">
+    <meta name="keywords" content="SVM, Sindhari, school, Rajasthan, education, home">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Home | SVM Sindhari">
+    <meta property="og:description" content="Welcome to Shree Vidhya Mandir, Sindhari. Empowering Students for a Brighter Future.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shyamgour.github.io/svmsindhari/index.html">
+    <meta property="og:image" content="https://shyamgour.github.io/svmsindhari/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home | SVM Sindhari">
+    <meta name="twitter:description" content="Welcome to Shree Vidhya Mandir, Sindhari. Empowering Students for a Brighter Future.">
+    <meta name="twitter:image" content="https://shyamgour.github.io/svmsindhari/images/og-image.jpg">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f6f8fa;
-        }
-        header {
-            background: #0d47a1;
-            color: #fff;
-            padding: 40px 20px 20px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            letter-spacing: 1.5px;
-        }
-        nav {
-            background: #1565c0;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #ffeb3b;
-        }
-        .hero {
-            padding: 50px 20px;
-            background: #e3f2fd;
-            text-align: center;
-        }
-        .hero h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 20px;
-        }
-        .feature-card {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-            padding: 30px 20px;
-            max-width: 320px;
-            min-width: 260px;
-            text-align: center;
-        }
-        .feature-card h3 {
-            margin-top: 0;
-            color: #1976d2;
-        }
-        .feature-card p {
-            color: #666;
-        }
-        footer {
-            background: #102027;
-            color: #fff;
-            text-align: center;
-            padding: 20px 10px;
-            margin-top: 30px;
-        }
-        @media (max-width: 800px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
+        <img src="images/hero.jpg" alt="School Main Building" class="header-img" />
         <h1>Shree Vidhya Mandir, Sindhari</h1>
         <p>Empowering Students for a Brighter Future</p>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="academics.html">Academics</a>
-        <a href="contact.html">Contact</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="academics.html">Academics</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" tabindex="0" aria-label="Menu" aria-expanded="false" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-    <section class="hero">
-        <h2>Welcome to Our School</h2>
-        <p>Providing quality education, nurturing talents, and building leaders of tomorrow. Join our vibrant learning community today!</p>
-    </section>
     <section class="features">
         <div class="feature-card">
+            <img src="images/classroom.jpg" alt="Modern Classroom" class="feature-img" />
             <h3>Modern Classrooms</h3>
             <p>Equipped with the latest technology to make learning interactive and effective.</p>
         </div>
         <div class="feature-card">
+            <img src="images/faculty.jpg" alt="Experienced Faculty" class="feature-img" />
             <h3>Experienced Faculty</h3>
             <p>Our teachers are passionate educators, dedicated to student success.</p>
         </div>
         <div class="feature-card">
+            <img src="images/sports.jpg" alt="Sports & Activities" class="feature-img" />
             <h3>Sports & Activities</h3>
             <p>A variety of sports and extracurricular activities to promote all-round development.</p>
         </div>
@@ -121,5 +60,6 @@
     <footer>
         &copy; 2025 Shree Vidhya Mandir, Sindhari. All rights reserved.
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

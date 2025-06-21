@@ -14,27 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Hamburger menu toggle
     if (hamburger && navLinks) {
-        const toggleMenu = () => {
+        hamburger.onclick = function() {
             navLinks.classList.toggle("open");
+            const expanded = hamburger.getAttribute("aria-expanded") === "true";
+            hamburger.setAttribute("aria-expanded", !expanded);
             hamburger.classList.toggle("open");
-            // Update aria-expanded attribute
-            const isExpanded = navLinks.classList.contains("open");
-            hamburger.setAttribute("aria-expanded", isExpanded);
         };
-
-        hamburger.addEventListener("click", toggleMenu);
-        hamburger.addEventListener("keydown", (event) => { // For keyboard accessibility
-            if (event.key === "Enter" || event.key === " ") {
-                toggleMenu();
-            }
-        });
-
         // Close nav when link clicked (on mobile)
         navAnchors.forEach(link => link.addEventListener("click", () => {
             if (window.innerWidth <= 600) {
-                if (navLinks.classList.contains("open")) { // Only if menu is open
-                    toggleMenu(); // Use the same toggle function to ensure states are consistent
-                }
+                navLinks.classList.remove("open");
+                hamburger.classList.remove("open");
+                hamburger.setAttribute("aria-expanded", "false");
             }
         }));
     }
